@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'testing_ios' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+ pod 'RealmSwift'
+  pod 'Moya'
+  pod 'SDWebImage'
+  pod "PostHog", "~> 1.1"
+  pod 'SwiftMessages'
+  pod 'Amplitude', '~> 8.8.0'
+ # pod 'Siren', :git => 'https://github.com/ArtSabintsev/Siren.git', :branch => 'swift4.2' # Swift 4.2
+  pod 'OpalImagePicker'
+  pod 'lottie-ios'
+
+  # Pods for testing_ios
+
+  target 'testing_iosTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'testing_iosUITests' do
+    # Pods for testing
+  end
+
+end
